@@ -20,7 +20,7 @@ public class CreatePostServlet extends HttpServlet {
         HttpSession session = request.getSession();
         String username = (String) session.getAttribute("username");
 
-        // Kiểm tra xem người dùng đã đăng nhập chưa
+        // Kiểm tra xem người dùng đã đăng nhập
         if (username != null) {
             String title = request.getParameter("title");
             String content = request.getParameter("content");

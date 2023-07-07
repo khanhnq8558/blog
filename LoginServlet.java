@@ -22,7 +22,7 @@ public class loginServlet extends HttpServlet {
         String username = request.getParameter("username");
         String password = request.getParameter("password");
 
-        // Kiểm tra xem người dùng có trong danh sách không
+        // Kiểm tra xem người dùng có trong danh sách đăng kí không
         for (User user : userList) {
             if (user.getUsername().equals(username) && user.getPassword().equals(password)) {
                 // Lưu thông tin người dùng vào session
