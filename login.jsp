@@ -8,8 +8,12 @@
         <p>Invalid username or password.</p>
     <% } %>
     <form action="login" method="post">
-        <input type="text" name="username" placeholder="Username" required>
-        <input type="password" name="password" placeholder="Password" required>
+        <label>
+            <input type="text" name="username" placeholder="Username" required>
+        </label>
+        <label>
+            <input type="password" name="password" placeholder="Password" required>
+        </label>
         <button type="submit">Login</button>
     </form>
 </body>
