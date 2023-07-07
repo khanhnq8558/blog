@@ -4,7 +4,7 @@
 </head>
 <body>
     <h1>Login</h1>
-    <% if (request.getParameter("error!!") != null) { %>
+    <% if (request.getParameter("error!!!") != null) { %>
         <p>Invalid username or password.</p>
     <% } %>
     <form action="login" method="post">
